@@ -133,54 +133,113 @@
 //     return result*2;
 // };
 
-let numbersArr=[1,2,3,4,5];
-console.log(numbersArr);
-console.log(numbersArr[0]);
-console.log(numbersArr[1]);
-console.log(numbersArr.length);
-numbersArr.push(10);
-console.log(numbersArr);
-numbersArr.pop();
-console.log(numbersArr);
+// let numbersArr=[1,2,3,4,5];
+// console.log(numbersArr);
+// console.log(numbersArr[0]);
+// console.log(numbersArr[1]);
+// console.log(numbersArr.length);
+// numbersArr.push(10);
+// console.log(numbersArr);
+// numbersArr.pop();
+// console.log(numbersArr);
 
-let colors=["pink","blue","red"];
-console.log(colors[0]);
-console.log(colors[2]);
-colors[1]="black";
-console.log(colors);
+// let colors=["pink","blue","red"];
+// console.log(colors[0]);
+// console.log(colors[2]);
+// colors[1]="black";
+// console.log(colors);
 
-let students=[];
-students.push("Daria");
-students.push("Maria");
-students.push("Olga");
-students.pop();
-console.log(students);
+// let students=[];
+// students.push("Daria");
+// students.push("Maria");
+// students.push("Olga");
+// students.pop();
+// console.log(students);
 
-let numbers2=[10,20,30];
-for (let i=0; i<numbers2.length; i++) {
-    console.log(numbers2[i]);
+// let numbers2=[10,20,30];
+// for (let i=0; i<numbers2.length; i++) {
+//     console.log(numbers2[i]);
+// }
+
+// for (let value of numbers2) {
+//     console.log(value);
+// }
+
+// let mixedArray=[1,"text",true,3.14];
+// console.log(mixedArray);
+
+// console.log(numbersArr.includes(1));
+// console.log(numbersArr.indexOf(2));
+
+// console.log(fruits.includes("Яблоко"));
+// console.log(fruits.includes("Манго")); 
+
+// let cities=["Volgograd","Moscow","Rostov"];
+// if (cities.includes("Volgograd")){
+//     console.log(cities.indexOf("Volgograd"));
+// }
+
+let user2={
+    name: "Ivan",
+    age: 20,
+    isStudent: true,
+    sayHello: function (){
+        console.log(`Hello my name is ${name}`);
+    }
+};
+user2.sayHello();
+
+console.log(user2);
+console.log(user2.name);
+console.log(user2.age);
+console.log(user2["name"]);
+
+user2.age=30;
+user2.name="Кирилл";
+delete user2.isStudent;
+console.log(user2);
+
+let book={
+    title:"Crime and Punishment",
+    author:"Dostoevsky",
+    year:1866
+};
+console.log(book.title);
+console.log(book.author);
+console.log(book.year);
+book.year=2026;
+
+let car={
+    brand:"Audi Q7",
+    year: 2015,
+    getInfo: function (){
+        console.log(`Brand ${brand}, year ${year}`)
+    }
+};
+
+for (let key in user2) {
+    console.log(key+":"+user2[key]);
 }
 
-for (let value of numbers2) {
-    console.log(value);
+let product={
+    name:"Honor MagicBook X16",
+    year: 2024,
+    price:50000
+}
+for (let key in product) {
+    console.log(key+":"+product[key]);
 }
 
-let mixedArray=[1,"text",true,3.14];
-console.log(mixedArray);
-
-console.log(numbersArr.includes(1));
-console.log(numbersArr.indexOf(2));
-
-console.log(fruits.includes("Яблоко"));
-console.log(fruits.includes("Манго")); 
-
-let cities=["Volgograd","Moscow","Rostov"];
-if (cities.includes("Volgograd")){
-    console.log(cities.indexOf("Volgograd"));
-}
-
-
-
+let student={
+    name:"Григорий",
+    skills: ["HTML","CSS","JS"],
+    address: {
+    city:"Волжский",
+    street:"Пушкина",
+    },
+};
+console.log(student.skills[0]);
+console.log(student.address.city);
 
 
 
