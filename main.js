@@ -114,24 +114,73 @@
 // console.log(counter());
 // console.log(counter());
 
-function sumFunc(a,b){
-    return a+b;
+// function sumFunc(a,b){
+//     return a+b;
+// }
+
+// const sumFunc2=(a,b)=>a+b;
+
+// const doumle=x=>x*2;
+
+// const sumFunc3=(a,b)=>a+b;
+
+// const sayGreeting=()=>console.log("Hello");
+
+// const square=x=>x*x;
+
+// const calculate=(a,b)=>{
+//     let result=a+b;
+//     return result*2;
+// };
+
+let numbersArr=[1,2,3,4,5];
+console.log(numbersArr);
+console.log(numbersArr[0]);
+console.log(numbersArr[1]);
+console.log(numbersArr.length);
+numbersArr.push(10);
+console.log(numbersArr);
+numbersArr.pop();
+console.log(numbersArr);
+
+let colors=["pink","blue","red"];
+console.log(colors[0]);
+console.log(colors[2]);
+colors[1]="black";
+console.log(colors);
+
+let students=[];
+students.push("Daria");
+students.push("Maria");
+students.push("Olga");
+students.pop();
+console.log(students);
+
+let numbers2=[10,20,30];
+for (let i=0; i<numbers2.length; i++) {
+    console.log(numbers2[i]);
 }
 
-const sumFunc2=(a,b)=>a+b;
+for (let value of numbers2) {
+    console.log(value);
+}
 
-const doumle=x=>x*2;
+let mixedArray=[1,"text",true,3.14];
+console.log(mixedArray);
 
-const sumFunc3=(a,b)=>a+b;
+console.log(numbersArr.includes(1));
+console.log(numbersArr.indexOf(2));
 
-const sayGreeting=()=>console.log("Hello");
+console.log(fruits.includes("Яблоко"));
+console.log(fruits.includes("Манго")); 
 
-const square=x=>x*x;
+let cities=["Volgograd","Moscow","Rostov"];
+if (cities.includes("Volgograd")){
+    console.log(cities.indexOf("Volgograd"));
+}
 
-const calculate=(a,b)=>{
-    let result=a+b;
-    return result*2;
-};
+
+
 
 
 
